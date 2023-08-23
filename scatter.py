@@ -18,6 +18,18 @@ if __name__ == '__main__':
     vmax=None, alpha=None, linewidths=None, verts=None, edgecolors=None, hold=None, data=None, **kwargs)
     """
     ax.scatter(x, y, label='x')
+    # plt.scatter(x, y, s, c, marker, cmap, norm, alpha, linewidths, edgecolorsl)
+    # 参数说明：
+    # x: x轴数据
+    # y: y轴数据
+    # s: 散点大小
+    # c: 散点颜色
+    # marker: 散点图形状
+    # cmap: 指定某个colormap值, 该参数一般不用，用默认值
+    # alpha: 散点的透明度
+    # linewidths: 散点边界线的宽度
+    # edgecolors: 设置散点边界线的颜色
+
     # legend
     ax.legend()
     plt.show()

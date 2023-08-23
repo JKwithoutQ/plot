@@ -1,11 +1,19 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
+# 中文乱码的处理
+plt.rcParams['font.sans-serif'] = ['Microsoft YaHei']  # 设置微软雅黑字体
+plt.rcParams['axes.unicode_minus'] = False  # 避免坐标轴不能正常的显示负号
+
 if __name__ == '__main__':
     x = np.random.randint(0, 10, 10)
     print(x)
     setting = {'fontsize': 18}
     fig, ax = plt.subplots()
+    # figuresize=()
+    # dpi=255
+    # facecolor
+    # edgecolor
     ax.plot(x, x, label='x')
     #
     ax.set_aspect('equal')
@@ -29,3 +37,4 @@ if __name__ == '__main__':
     ax.set_ylim(0, 10)
     # plot
     plt.show()
+    # 图表动态刷新：plt.ion()和plt.ioff()
